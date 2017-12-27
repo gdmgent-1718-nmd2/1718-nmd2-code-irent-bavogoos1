@@ -1,3 +1,481 @@
 @import
   "bootstrap-variables",                  // See _bootstrap-variables.scss
   "../_vendor/bootstrap/scss/bootstrap";  // See _vendor/bootstrap/scss/bootstrap.scss
+
+
+  @import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+//** SASS **//
+
+$quicksand:'Quicksand', sans-serif;  
+$white: white;
+$black: black;
+  
+
+body{
+  background: -webkit-gradient(linear, left top, left bottom, from(#0015FF), to(#BEBAF8)) fixed;
+}
+
+p, a, h1{
+  font-family: $quicksand;
+  color: $white;
+}
+.socials{
+  float: left;
+}
+
+h2{
+  font-family: $quicksand;
+  color: $white;
+  padding-top: 30px;
+}
+
+.nav{
+  font-size: 9px;
+}
+
+//** STYLES ABOUT US**//
+
+.ABOUT{
+  font-family: $quicksand;
+  width: 760px;
+  position: relative;
+  margin:0 auto;  
+  padding-top: 20px;
+  border-bottom: 1px solid $white;
+}
+
+.learn{
+  text-align: center;
+  color: $white;
+}
+
+.about{
+  color:$white;
+  text-align: center;
+}
+.container{
+  padding-top: 50px;
+  margin: auto;
+  width: 760px;
+  height: 600px;
+  padding: 10px;
+  }
+  
+  header{
+    align-items: center;
+    padding-bottom: 50px
+   }
+  
+  header a{
+    width:60px;
+  }
+
+.rounded-circle{
+  padding-right: 20px;  
+}
+
+
+.row1{
+  padding-top: 40px;
+}
+.row2{
+  padding-top: 40px;
+}
+
+//** STYLES INDEX**//
+
+
+.btn-primary {
+  color: $black;
+  background-color: $white;
+  border-color: $black;
+  box-shadow: 5px 10px;
+  
+}
+
+.center-block {
+  display: block;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-link{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ .text-center{
+   font-family: Arial, Helvetica, sans-serif;
+   color: $white;
+   padding-top: 10px;
+   padding-left: 10px;
+   padding-right: 10px;
+ }
+
+ .span12{
+   padding-top: 50px;
+   height: 200px;
+
+
+ }
+
+ //** STYLES FAQ**//
+
+ .content {
+  width: 60%;
+  margin: 0 auto;
+
+}
+
+.centerplease {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+
+.question {
+  position: relative;
+  background-color: $white;
+  margin: 0;
+  padding: 10px 10px 10px 50px;
+  display: block;
+  width:100%;
+  cursor: pointer;
+}
+
+.answers {
+  background: lightblue;
+  padding: 0px 15px;
+  margin: 5px 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: .7s ease;
+  -moz-transition: .7s ease;
+  -o-transition: .7s ease;
+  transition: .7s ease;
+
+}
+
+.questions:checked ~ .answers{
+  height: auto;
+  opacity: 1;
+  padding: 15px;
+}
+
+.plus {
+  position: absolute;
+  margin-left: 10px;
+  z-index: 5;
+  font-size: 2em;
+  line-height: 100%;
+  -webkit-user-select: none;    
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.questions:checked ~ .plus {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+.emailvragen{
+  padding-top: 20px;
+  text-align: center;
+  font-size: 2rem;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.questions {
+  display: none;
+}
+#contact{
+  padding:10px 0 10px;
+}
+
+.contact-text{
+  margin:45px auto;
+}
+
+.mail-message-area{
+  width:100%;
+  padding:0 15px;
+}
+
+.mail-message{
+  width: 100%;
+  background:rgba(255,255,255, 0.8) !important;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  transition: all 0.7s;
+  margin:0 auto;
+  border-radius: 0;
+}
+
+.not-visible-message{
+  height:0px;
+  opacity: 0;
+}
+
+.visible-message{
+  height:auto;
+  opacity: 1;
+  margin:25px auto 0;
+}
+
+/* Input Styles */
+
+.form{
+  width: 100%;
+  padding: 15px;
+  background:#f8f8f8;
+  border:1px solid rgba(0, 0, 0, 0.075);
+  margin-bottom:25px;
+  color:#727272 !important;
+  font-size:13px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.form:hover{
+  border:1px solid #8BC3A3;
+}
+
+.form:focus{
+  color: white;
+  outline: none;
+  border:1px solid #8BC3A3;
+}
+
+.textarea{
+  height: 200px;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+/* Generic Button Styles */
+
+.button{
+  padding:8px 12px;
+  background:#0A5175;
+  display: block;
+  width:120px;
+  margin:10px 0 0px 0;
+  border-radius:3px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align:center;
+  font-size:0.8em;
+  box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+}
+
+.button:hover{
+  background:#8BC3A3;
+  color:white;
+}
+
+/* Send Button Styles */
+
+.form-btn{
+  width:180px;
+  display: block;
+  height: auto;
+  padding:15px;
+  color:#fff;
+  background: #987CAC;
+  border:none;
+  border-radius:3px;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  margin:auto;
+  box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+}
+
+.form-btn:hover{
+  background:#111;
+  color: white;
+  border:none;
+}
+
+.form-btn:active{
+  opacity: 0.9;
+}
+center{
+margin-top:330px;
+}
+input {
+  position: relative;
+  z-index: 9999;
+}
+
+.innercontact{
+  width: 40%;
+  position: relative;
+  margin:0 auto;  
+  padding-top: 20px;
+  
+}
+
+ //** STYLES SHOP **// 
+
+ @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+ .shop {
+   margin-left: auto;
+   margin-right: auto;
+   font-family: 'Oswald', Arial, sans-serif;
+   position: relative;
+   margin: 10px 1%;
+   text-align: center;
+   color: $white;
+   font-size: 16px;
+   
+ }
+ 
+
+ .shop img {
+   max-width: 100%;
+   vertical-align: top;
+   position: relative;
+   background-color:$white;
+   padding-top: 40px;
+ }
+ 
+ .shop figcaption {
+   padding: 20px;
+ }
+
+ 
+ 
+ .shop .price {
+   font-weight: 500;
+   font-size: 1.4em;
+ }
+ 
+
+ 
+ .shop i {
+   position: absolute;
+   top: 0;
+   left: 50%;
+   -webkit-transform: translate(-50%, 0%);
+   transform: translate(-50%, 0%);
+   width: 56px;
+   line-height: 56px;
+   text-align: center;
+   border-radius: 50%;
+   background-color: $black;
+   color: $white;
+   font-size: 36px;
+ }
+ 
+ .shop a {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   z-index: 1;
+ }
+ 
+ .shop:hover i,
+ .shop.hover i,
+ .shop:hover img,
+ .shop.hover img {
+   background-color: $white;
+ }
+ 
+ .shop:hover i,
+ .shop.hover i {
+   -webkit-transform: translate(-50%, 5px);
+   transform: translate(-50%, 5px);
+ }
+ 
+ .kleur{
+  width: 40%;
+  position: relative;
+  margin:0 auto;  
+  background-color: blue;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+ }
+
+ #datepicker {
+  margin-top: 100px;
+  width: 60%;
+  position: relative;
+  margin:0 auto;  
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.huur{
+  padding-top: 20px;
+  text-align: center;
+  font-size: 2rem;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.betaling{
+  padding-top: 20px;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.foto{
+    padding-top: 200px;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+.kleur{
+  border-radius: 25px;
+  
+}
+
+ @media only screen and (max-width: 1000px){
+  .ABOUT { width: 90%; }
+  .container {width: 90%;}
+  .innercontact {width: 70%;}
+  #datepicker{ width: 70%;}
+  .kleur {width: 60%;}
+  }
+
+  @media screen and (min-width:768px){
+    .navbar-brand-centered {
+        position: absolute;
+        left: 50%;
+        display: block;
+        width: 160px;
+        text-align: center;
+        background-color: #eee;
+    }
+    .navbar>.container .navbar-brand-centered, 
+    .navbar>.container-fluid .navbar-brand-centered {
+        margin-left: -80px;
+    }
+}

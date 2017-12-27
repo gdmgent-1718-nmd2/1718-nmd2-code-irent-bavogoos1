@@ -1,0 +1,46 @@
+---
+layout   : default
+permalink: /contact
+# Custom Page Variables
+# ─────────────────────
+title: contact
+---
+
+<p class="emailvragen">Indien u nog vragen heeft <br>
+    aarzel dan niet om contact op te nemen.</p>    
+ <div class="innercontact">
+       <!-- Form Area -->
+       <div class="contact-form">
+           <!-- Form -->
+           <form id="contact-us" method="post" action="#">
+               <!-- Left Inputs -->
+               <div class="col-xs-6 wow animated slideInLeft" data-wow-delay=".5s">
+                   <!-- Name -->
+                   <input type="text" name="name" id="name" required="required" class="form" placeholder="Naam" />
+                   <!-- Email -->
+                   <input type="email" name="mail" id="mail" required="required" class="form" placeholder="Email" />
+                   <!-- Subject -->
+                   <input type="text" name="subject" id="subject" required="required" class="form" placeholder="Onderwerp" />
+               </div><!-- End Left Inputs -->
+               <!-- Right Inputs -->
+               <div class="col-xs-6 wow animated slideInRight" data-wow-delay=".5s">
+                   <!-- Message -->
+                   <textarea name="message" id="message" class="form textarea"  placeholder="Vraag"></textarea>
+               </div><!-- End Right Inputs -->
+               <!-- Bottom Submit -->
+               <div class="relative fullwidth col-xs-12">
+                   <!-- Send Button -->
+                   <button type="submit" id="submit" name="submit" class="form-btn semibold">Verzend</button> 
+               </div><!-- End Bottom Submit -->
+               <!-- Clear -->
+               <div class="clear"></div>
+           </form>
+           <div class="mail-message-area">
+               <div class="alert gray-bg mail-message not-visible-message">
+                   <strong>Thank You !</strong> Your email has been delivered.
+               </div>
+           </div>
+        </div>
+   </div>
+
+  
